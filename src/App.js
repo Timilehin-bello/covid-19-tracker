@@ -8,6 +8,7 @@ import {
 import React, { useEffect, useState } from "react";
 import './App.css';
 import InfoBox from "./component/InfoBox/InfoBox";
+import LineGraph from "./component/LineGraph/LineGraph";
 import Map from "./component/Map/Map";
 import Table from "./component/Table/Table";
 import { sortData } from "./utils";
@@ -100,7 +101,9 @@ function App() {
       <Card className="app__right">
         <CardContent>
           <h1>Live cases by Country</h1>
-          <Table countries={tableData}/>
+          <Table countries={tableData} />
+          <h1>Worldwide New Cases</h1>
+          <LineGraph />
         </CardContent>
       </Card>
     </div>
